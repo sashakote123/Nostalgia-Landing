@@ -1,0 +1,42 @@
+.section-content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.about-card {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text {
+    width: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.text-desc {
+    font-weight: 700;
+    font-size: 25px;
+    color: #7b3c77;
+}
+
+.secondary {
+    color: black;
+}
+
+.text-phone {
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+    /* text-decoration: solid; */
+}
+
+.card-img img{
+    border-radius: 5%;
+}

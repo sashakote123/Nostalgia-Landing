@@ -1,0 +1,46 @@
+.concerts-img {
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.concerts-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.concerts-text {
+    margin-bottom: 44px;
+    width: 810px;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: #000;
+}
+
+.concerts-btns{
+    margin-bottom: 44px;
+    display: flex;
+    gap: 112px;
+}
+
+.concerts-btn {
+    border-radius: 11px;
+    width: 362px;
+    height: 64px;
+    background: #2c315e;
+
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+}
+
+.concerts-btn:hover{
+
+    background: linear-gradient(90deg, rgba(47,52,102,1) 0%, rgba(165,46,86,1) 100%);
+    /* background-color: white; */
+    color: #FFF;
+}

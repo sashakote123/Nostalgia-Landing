@@ -1,0 +1,7 @@
+.header {
+    min-height: 100vh;
+    background: rgb(47, 52, 102);
+    background: linear-gradient(90deg, rgba(47, 52, 102, 1) 0%, rgba(165, 46, 86, 1) 100%);
+}
+
+/* #2F3466 #A52E56 */

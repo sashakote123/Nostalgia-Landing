@@ -1,0 +1,17 @@
+.promo{
+
+    padding-top: 179px;
+}
+
+.promo-title{
+    padding-bottom: 52px;
+    text-align: center;
+}
+
+.promo-group{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}

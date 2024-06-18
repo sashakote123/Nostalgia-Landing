@@ -1,0 +1,62 @@
+.vinyl-records {
+    min-height: 100vh;
+
+
+    background: rgb(47, 52, 102);
+    background: linear-gradient(90deg, rgba(47, 52, 102, 1) 0%, rgba(165, 46, 86, 1) 100%);
+}
+
+.white {
+    color: white;
+    margin-bottom: 74px;
+}
+
+.vinyl-carousel {
+    width: 737px;
+    display: flex;
+    gap: 50px;
+}
+
+.vinyl-description {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 86px;
+
+}
+
+.description-text {
+    font-family: "Abel", sans-serif;
+    width: 850px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.description-btns{
+    margin-bottom: 72px;
+    display: flex;
+    gap: 143px;
+}
+
+.description-btn {
+    font-family: "Abel", sans-serif;
+    background: #cf99a6;
+    border-radius: 11px;
+    width: 232px;
+    height: 64px;
+
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.description-btn:hover{
+    background-color: white;
+}

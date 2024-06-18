@@ -1,0 +1,41 @@
+.placeholders {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.line-placeholder-one {
+    position: absolute;
+    height: 900px;
+    width: 100%;
+
+    background-image: url(./../../sources/Line0.png);
+    background-repeat: no-repeat;
+    background-position: left 50% top 228px;
+    z-index: 0;
+}
+
+.line-placeholder-two {
+    z-index: 0;
+    position: absolute;
+    top: 900px;
+    height: 900px;
+    width: 100%;
+
+    background-image: url(./../../sources/Line1.png);
+    background-repeat: no-repeat;
+    background-position: left 50% top 0;
+}
+
+.line-placeholder-three {
+    position: absolute;
+    top: 1800px;
+    height: 900px;
+    width: 100%;
+
+
+
+    background-image: url(./../../sources/Line2.png);
+    background-repeat: no-repeat;
+    background-position: left 50% bottom 410px;
+}

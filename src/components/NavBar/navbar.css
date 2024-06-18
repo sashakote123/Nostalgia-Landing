@@ -1,0 +1,51 @@
+.nav {
+    position: fixed;
+    background: rgb(47, 52, 102);
+    background: linear-gradient(90deg, rgba(47, 52, 102, 1) 0%, rgba(165, 46, 86, 1) 100%);
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.nav-links {
+    width: 652px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+
+
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.nav-links a {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.active{
+    position: relative; /* Относительное позиционирование для родителя */
+    display: inline-block; 
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px; /* Расстояние от текста до подчеркивания */
+    height: 2px; /* Толщина подчеркивания */
+    background-color: white; /* Цвет подчеркивания */
+    transform-origin: center;
+  }
