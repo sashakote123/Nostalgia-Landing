@@ -2,7 +2,7 @@ const FoodCard = (props) => {
     return (
         <li className="menu-item-wide">
             <div className="item-title">{props.name}</div>
-            <div className="item-img">
+            <div className="item-img-food">
                 <img src={props.img} alt="" />
             </div>
             <div className="item-price">{props.price} ₽</div>

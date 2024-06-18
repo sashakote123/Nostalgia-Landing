@@ -5,13 +5,17 @@
     width: 100%;
     left: 0;
     z-index: 1000;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 21px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
 
+}
+
+.burger-btn {
+    display: none;
+    background: none;
 }
 
 .nav-links {
@@ -21,8 +25,51 @@
     gap: 15px;
 
 
-
 }
+
+.none {
+    left: 0 !important;
+}
+
+.navigation-trey {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.666);
+    color: white;
+    z-index: 1001;
+    left: 2000px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.4s ease-in;
+}
+
+.nav-links-trey {
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 70px;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+
+@media (max-width: 830px) {
+    .nav {
+        justify-content: space-between;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
 
 .nav-links li {
     cursor: pointer;
@@ -34,9 +81,9 @@
     color: #fff;
 }
 
-.active{
-    position: relative; /* Относительное позиционирование для родителя */
-    display: inline-block; 
+.active {
+    position: relative;
+    display: inline-block;
 }
 
 .active::after {
@@ -44,8 +91,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -4px; /* Расстояние от текста до подчеркивания */
-    height: 2px; /* Толщина подчеркивания */
-    background-color: white; /* Цвет подчеркивания */
+    bottom: -4px;
+    height: 2px;
+    background-color: white;
     transform-origin: center;
-  }
+}

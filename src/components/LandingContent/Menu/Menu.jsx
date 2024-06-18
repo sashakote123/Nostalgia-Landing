@@ -13,8 +13,8 @@ import { React, useRef } from 'react';
 const Menu = () => {
 
     const menuRef = useRef(null)
-    
-    
+
+
     return (
         <section ref={menuRef}>
             <div className="section-title">Menu</div>

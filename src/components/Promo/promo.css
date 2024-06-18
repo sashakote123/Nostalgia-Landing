@@ -1,17 +1,27 @@
-.promo{
+.promo {
 
     padding-top: 179px;
 }
 
-.promo-title{
-    padding-bottom: 52px;
+.promo-title {
+    padding: 52px 30px;
     text-align: center;
 }
 
-.promo-group{
+.promo-title img{
+    max-width: 100%;
+    height: auto;
+}
+
+.promo-group {
     position: absolute;
     bottom: 0;
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+
+.group-img img {
+    max-width: 100%;
+    height: auto;
 }

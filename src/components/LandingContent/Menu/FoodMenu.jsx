@@ -21,13 +21,25 @@ const FoodMenu = () => {
         carouselRef.current.prev(250);
     }
 
+    const options = {
+        loop: true,
+        responsive: {
+            0: {
+                items: 1, // количество элементов на экране шириной 0px и выше
+            },
+            1250: {
+                items: 2, // количество элементов на экране шириной 600px и выше
+            },
+
+        }
+    };
 
     return (
         <div className="container-wide">
             <button onClick={rightSlide} className='carousel-btn'>
                 <img src={left} alt="<" />
             </button>
-            <OwlCarousel ref={carouselRef} className="menu-carousel" loop items={2} >
+            <OwlCarousel ref={carouselRef} className="menu-carousel-wide" {...options} >
                 {foodCard.map(item => {
                     return <FoodCard name={item.name} img={item.img} price={item.price} />
                 })}

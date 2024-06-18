@@ -13,8 +13,6 @@ const LandingContent = () => {
         <div>
             <div className="placeholders">
                 <div className="line-placeholder-one"></div>
-                <div className="line-placeholder-two"></div>
-                <div className="line-placeholder-three"></div>
             </div>
             <Element name='section1'>
                 <Menu />

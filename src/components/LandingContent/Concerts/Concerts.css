@@ -1,9 +1,17 @@
 .concerts-img {
     margin-top: 44px;
     margin-bottom: 44px;
+
+
 }
 
-.concerts-wrapper{
+.concerts-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.concerts-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,10 +28,11 @@
     color: #000;
 }
 
-.concerts-btns{
+.concerts-btns {
+    width: 836px;
     margin-bottom: 44px;
     display: flex;
-    gap: 112px;
+    gap: 30px;
 }
 
 .concerts-btn {
@@ -38,9 +47,46 @@
     color: #fff;
 }
 
-.concerts-btn:hover{
+.concerts-btn:hover {
 
-    background: linear-gradient(90deg, rgba(47,52,102,1) 0%, rgba(165,46,86,1) 100%);
+    background: linear-gradient(90deg, rgba(47, 52, 102, 1) 0%, rgba(165, 46, 86, 1) 100%);
     /* background-color: white; */
     color: #FFF;
+}
+
+
+@media (max-width: 900px) {
+    .concerts-btns {
+        width: 660px;
+    }
+
+    .concerts-text {
+        width: 660px;
+    }
+}
+
+@media (max-width: 720px) {
+    .concerts-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+
+    .concerts-text {
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-title{
+        font-size: 47px !important;
+    }
+    .concerts-text {
+        width: 350px;
+    }
+
+    .concerts-btn {
+        width: 300px;
+    }
 }

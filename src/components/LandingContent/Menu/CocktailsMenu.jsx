@@ -19,6 +19,22 @@ const CocktailsMenu = () => {
         carouselRef.current.next(250);
     }
 
+    const options = {
+        loop: true,
+        responsive: {
+            0: {
+                items: 1, // количество элементов на экране шириной 0px и выше
+            },
+            1000: {
+                items: 2, // количество элементов на экране шириной 600px и выше
+            },
+            1230: {
+                items: 3, // количество элементов на экране шириной 1000px и выше
+            },
+
+        }
+    };
+
     const rightSlide = () => {
         carouselRef.current.prev(250);
     }
@@ -29,9 +45,9 @@ const CocktailsMenu = () => {
                 <button onClick={rightSlide} className='carousel-btn'>
                     <img src={left} alt="<" />
                 </button>
-                <OwlCarousel ref={carouselRef} className="menu-carousel" loop items={3} >
+                <OwlCarousel ref={carouselRef} className="menu-carousel" {...options} >
                     {barCard.map(item => {
-                        return <CoctailCard name={item.name} img={item.img} price={item.price} />          
+                        return <CoctailCard name={item.name} img={item.img} price={item.price} />
                     })}
                 </OwlCarousel>
                 <button className='carousel-btn'>

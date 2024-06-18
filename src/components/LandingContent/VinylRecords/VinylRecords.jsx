@@ -22,6 +22,19 @@ const VinylRecords = () => {
         carouselRef.current.prev(250);
     }
 
+    const options = {
+        loop: true,
+        responsive: {
+            0: {
+                items: 1, // количество элементов на экране шириной 0px и выше
+            },
+            1000: {
+                items: 2, // количество элементов на экране шириной 600px и выше
+            },
+
+        }
+    };
+
     return (
         <section className="vinyl-records">
             <div className="section-title white">VINYL RECORDS</div>
@@ -29,9 +42,9 @@ const VinylRecords = () => {
                 <button onClick={rightSlide} className='carousel-btn'>
                     <img src={left} alt="" />
                 </button>
-                <OwlCarousel ref={carouselRef} className="vinyl-carousel" margin={49} loop items={2} >
-                    <div><img src={img1} alt="" /></div>
-                    <div><img src={img2} alt="" /></div>
+                <OwlCarousel ref={carouselRef} className="vinyl-carousel" {...options}>
+                    <div className='vinyl-img'><img src={img1} alt="" /></div>
+                    <div className='vinyl-img'><img src={img2} alt="" /></div>
                 </OwlCarousel>
                 <button onClick={leftSlide} className='carousel-btn'>
                     <img src={right} alt="" />

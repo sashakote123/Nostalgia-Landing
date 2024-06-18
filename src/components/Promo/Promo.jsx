@@ -7,8 +7,12 @@ const Promo = () => {
         <section className="promo">
             <div className="promo-title"><img src={title} alt="title" /></div>
             <div className="promo-group">
-                <img src={group} alt="" />
-                <img src={cocks} alt="" />
+                <div className="group-img">
+                    <img src={group} alt="" />
+                </div>
+                <div className="group-img">
+                    <img src={cocks} alt="" />
+                </div>
             </div>
         </section>
     );
