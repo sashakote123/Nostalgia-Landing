@@ -19,7 +19,7 @@ body {
     max-width: 1136px;
     margin: 0 auto;
     /* padding: 0 30px; */
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 
     display: flex;
     align-items: center;
@@ -37,16 +37,31 @@ body {
     background: #2c315e;
     max-width: 440px;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
     color: #fff;
 
 
 }
 
-.main-button:hover{
+.section-title {
+    position: relative;
+    z-index: 1;
+    padding-top: 103px;
+    text-align: center;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: #2c315e;
+}
 
-    background: linear-gradient(90deg, rgba(47,52,102,1) 0%, rgba(165,46,86,1) 100%);
+.white{
+    color: white;
+}
+
+.main-button:hover {
+
+    background: linear-gradient(90deg, rgba(47, 52, 102, 1) 0%, rgba(165, 46, 86, 1) 100%);
     /* background-color: white; */
     color: #FFF;
 }

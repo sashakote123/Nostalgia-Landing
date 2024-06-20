@@ -7,19 +7,20 @@ import barCard from './barCard';
 
 import CocktailsMenu from './CocktailsMenu';
 import FoodMenu from './FoodMenu';
-import { React, useRef } from 'react';
+import { React, createContext, useRef } from 'react';
+import ShoppingCart from './ShoppingCart';
+
 
 
 const Menu = () => {
 
     const menuRef = useRef(null)
 
-
     return (
         <section ref={menuRef}>
-            <div className="section-title">Menu</div>
-            <CocktailsMenu />
-            <FoodMenu />
+            <div className="section-title">MENU</div>
+                <CocktailsMenu />
+                <FoodMenu />
         </section>
 
     );

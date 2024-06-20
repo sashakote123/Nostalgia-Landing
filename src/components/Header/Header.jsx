@@ -8,9 +8,7 @@ const Header = () => {
     return (
         <div className="header">
             <NavBar />
-            <Element name='section0'>
-                <Promo />
-            </Element>
+
 
         </div>
 

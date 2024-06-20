@@ -2,8 +2,13 @@ import './records.css'
 import left from './../../../sources/menu/left.png'
 import right from './../../../sources/menu/right.png'
 
+
 import img1 from './../../../sources/cover1.jpg'
 import img2 from './../../../sources/cover2.jpg'
+import img3 from './../../../sources/cover3.png'
+import img4 from './../../../sources/cover4.png'
+import img5 from './../../../sources/cover5.png'
+import img6 from './../../../sources/cover6.png'
 
 import React, { useRef } from 'react';
 import OwlCarousel from 'react-owl-carousel';
@@ -24,6 +29,8 @@ const VinylRecords = () => {
 
     const options = {
         loop: true,
+        autoplay: true, // Включает автопроигрывание
+        autoplayTimeout: 5000, // Интервал времени в миллисекундах (3 секунды)
         responsive: {
             0: {
                 items: 1, // количество элементов на экране шириной 0px и выше
@@ -45,6 +52,10 @@ const VinylRecords = () => {
                 <OwlCarousel ref={carouselRef} className="vinyl-carousel" {...options}>
                     <div className='vinyl-img'><img src={img1} alt="" /></div>
                     <div className='vinyl-img'><img src={img2} alt="" /></div>
+                    <div className='vinyl-img'><img src={img3} alt="" /></div>
+                    <div className='vinyl-img'><img src={img4} alt="" /></div>
+                    <div className='vinyl-img'><img src={img5} alt="" /></div>
+                    <div className='vinyl-img'><img src={img6} alt="" /></div>
                 </OwlCarousel>
                 <button onClick={leftSlide} className='carousel-btn'>
                     <img src={right} alt="" />

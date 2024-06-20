@@ -20,7 +20,7 @@ const CocktailsMenu = () => {
     }
 
     const options = {
-        loop: true,
+        loop: false,
         responsive: {
             0: {
                 items: 1, // количество элементов на экране шириной 0px и выше
@@ -47,7 +47,7 @@ const CocktailsMenu = () => {
                 </button>
                 <OwlCarousel ref={carouselRef} className="menu-carousel" {...options} >
                     {barCard.map(item => {
-                        return <CoctailCard name={item.name} img={item.img} price={item.price} />
+                        return <CoctailCard key={item.id} id={item.id} name={item.name} img={item.img} price={item.price} />
                     })}
                 </OwlCarousel>
                 <button className='carousel-btn'>

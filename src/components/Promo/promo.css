@@ -1,6 +1,12 @@
 .promo {
-
-    padding-top: 179px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    min-height: 100vh;
+    background: rgb(47, 52, 102);
+    background: linear-gradient(90deg, rgba(47, 52, 102, 1) 0%, rgba(165, 46, 86, 1) 100%);
+    z-index: 100;
+    padding-top: 109px;
 }
 
 .promo-title {
