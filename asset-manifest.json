@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/Nostalgia-Landing/static/css/main.e02fdd4e.css",
-    "main.js": "/Nostalgia-Landing/static/js/main.8e299976.js",
+    "main.css": "/Nostalgia-Landing/static/css/main.3bd6da25.css",
+    "main.js": "/Nostalgia-Landing/static/js/main.32593bc4.js",
     "static/media/group.png": "/Nostalgia-Landing/static/media/group.2dbf864d6bc58f7638ad.png",
-    "static/media/Line2.png": "/Nostalgia-Landing/static/media/Line2.8c810e36bdcc91ed02b1.png",
     "static/media/plate5.png": "/Nostalgia-Landing/static/media/plate5.8479ebac46454c4e1619.png",
     "static/media/plate4.png": "/Nostalgia-Landing/static/media/plate4.c3daca979a3097d5758c.png",
     "static/media/inter.jpg": "/Nostalgia-Landing/static/media/inter.8da9a6331982256d4f2e.jpg",
@@ -14,6 +13,7 @@
     "static/media/Cocks.png": "/Nostalgia-Landing/static/media/Cocks.db4d4b2982110092145f.png",
     "static/media/plate1.png": "/Nostalgia-Landing/static/media/plate1.7fc7003f66f0f016a9b9.png",
     "static/media/plate3.png": "/Nostalgia-Landing/static/media/plate3.06b08c9a9bd92aa20a66.png",
+    "static/media/linia.png": "/Nostalgia-Landing/static/media/linia.577f1ca52c778db70491.png",
     "static/media/cover5.png": "/Nostalgia-Landing/static/media/cover5.2624d649c42a9f680ac1.png",
     "static/media/cover3.png": "/Nostalgia-Landing/static/media/cover3.6d656212c93ebdfd0720.png",
     "static/media/cockTail3.png": "/Nostalgia-Landing/static/media/cockTail3.958e080086a36cbc4e3d.png",
@@ -33,11 +33,11 @@
     "static/media/delete.svg": "/Nostalgia-Landing/static/media/delete.b433337db7f3fa4e0a17856da7348f16.svg",
     "static/media/backBtn.svg": "/Nostalgia-Landing/static/media/backBtn.8cf26e4b613a2cfebac783d8e2c8574a.svg",
     "static/media/BurgerBtn.svg": "/Nostalgia-Landing/static/media/BurgerBtn.1863b7e3dbbbe13a7eef85cdbd02a18a.svg",
-    "main.e02fdd4e.css.map": "/Nostalgia-Landing/static/css/main.e02fdd4e.css.map",
-    "main.8e299976.js.map": "/Nostalgia-Landing/static/js/main.8e299976.js.map"
+    "main.3bd6da25.css.map": "/Nostalgia-Landing/static/css/main.3bd6da25.css.map",
+    "main.32593bc4.js.map": "/Nostalgia-Landing/static/js/main.32593bc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e02fdd4e.css",
-    "static/js/main.8e299976.js"
+    "static/css/main.3bd6da25.css",
+    "static/js/main.32593bc4.js"
   ]
 }
