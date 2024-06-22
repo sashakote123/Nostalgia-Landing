@@ -51,9 +51,7 @@
 }
 
 .concerts-btn:hover {
-
     background: linear-gradient(90deg, rgba(47, 52, 102, 1) 0%, rgba(165, 46, 86, 1) 100%);
-    /* background-color: white; */
     color: #FFF;
 }
 

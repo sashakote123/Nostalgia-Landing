@@ -1,17 +1,18 @@
-import { useContext, useRef, useEffect, useState } from "react";
+import { useContext, useRef, useEffect } from "react";
 import { ShoppingCartContext } from "../../../App";
-
-
-//const shoppingCart = new Set();
+import { indexContext } from "./Menu";
+import { handlerContext } from "../LandingContent";
 
 
 
 const CoctailCard = (props) => {
-    const [click, setlick] = useState(0);
 
     const shoppingCart = useContext(ShoppingCartContext);
 
     const ref = useRef(null);
+
+    const  { setIndex2 } = useContext(indexContext)
+    const { size, setSize } = useContext(handlerContext)
 
     useEffect(() => {
         if (shoppingCart.has(props.id)) {
@@ -22,15 +23,21 @@ const CoctailCard = (props) => {
 
 
     let addToCard = (event) => {
-        setlick(+1)
+
         if (!shoppingCart.has(props.id)) {
             shoppingCart.add(props.id);
             event.target.innerHTML = 'В корзине';
             event.target.classList.add('added');
+
+            setIndex2(props.id);
+            setSize(size + 1)
         } else {
             shoppingCart.delete(props.id);
             event.target.classList.remove('added');
             event.target.innerHTML = 'В корзину';
+
+            setIndex2(props.id);
+            setSize(size - 1)
         }
     }
 

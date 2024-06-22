@@ -27,16 +27,16 @@ const VinylRecords = () => {
         carouselRef.current.prev(250);
     }
 
-    const options = {
+    const optionsVinyl = {
         loop: true,
-        autoplay: true, // Включает автопроигрывание
-        autoplayTimeout: 5000, // Интервал времени в миллисекундах (3 секунды)
+        autoplay: true, 
+        autoplayTimeout: 5000, 
         responsive: {
             0: {
-                items: 1, // количество элементов на экране шириной 0px и выше
+                items: 1, 
             },
             1000: {
-                items: 2, // количество элементов на экране шириной 600px и выше
+                items: 2, 
             },
 
         }
@@ -49,7 +49,7 @@ const VinylRecords = () => {
                 <button onClick={rightSlide} className='carousel-btn'>
                     <img src={left} alt="" />
                 </button>
-                <OwlCarousel ref={carouselRef} className="vinyl-carousel" {...options}>
+                <OwlCarousel ref={carouselRef} className="vinyl-carousel" {...optionsVinyl}>
                     <div className='vinyl-img'><img src={img1} alt="" /></div>
                     <div className='vinyl-img'><img src={img2} alt="" /></div>
                     <div className='vinyl-img'><img src={img3} alt="" /></div>

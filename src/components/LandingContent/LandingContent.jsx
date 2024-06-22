@@ -5,25 +5,21 @@ import Contacts from "./Contacts/Contacts";
 import Menu from "./Menu/Menu";
 import VinylRecords from "./VinylRecords/VinylRecords";
 
-import { Link, Element, animateScroll as scroll } from 'react-scroll';
+import { Element } from 'react-scroll';
 import ShoppingCardBtn from '../ShoppingCardBtn/ShoppingCardBtn';
 import Promo from '../Promo/Promo';
+import { useContext, useState } from 'react';
+import React from "react";
 import { ShoppingCartContext } from '../../App';
-import { useContext, useEffect, useState, useMemo } from 'react';
 
+export const handlerContext = React.createContext();
 
 const LandingContent = () => {
 
     const shoppingCart = useContext(ShoppingCartContext)
 
-    const cartSize = useMemo(() => shoppingCart.size, [shoppingCart]);
-    
-    const [size, setSize] = useState(cartSize);
+    const [size, setSize] = useState(shoppingCart.size);
 
-    useEffect(() => {
-        setSize(cartSize);
-        console.log(shoppingCart);
-    }); 
 
 
     return (
@@ -35,8 +31,11 @@ const LandingContent = () => {
                 <Promo />
             </Element>
             <ShoppingCardBtn items={size} />
+
             <Element name='section1'>
-                <Menu />
+                <handlerContext.Provider value={{ size, setSize }}>
+                    <Menu />
+                </handlerContext.Provider>
             </Element>
 
             <Element name='section2'>

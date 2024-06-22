@@ -1,9 +1,7 @@
 .footer-container {
-
     max-width: 1103px;
     margin: 0 auto;
     height: 75vh;
-
 }
 
 .footer {
@@ -23,7 +21,6 @@
 
 .footer-text {
     width: 451px;
-
     line-height: 2;
     font-style: italic;
     font-weight: 700;
@@ -37,7 +34,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 11px;
-
 }
 
 .contacts a:last-child {
@@ -83,7 +79,6 @@
 
     .footer-text {
         width: 400px;
-
         line-height: 1.2;
         font-style: italic;
         font-weight: 700;

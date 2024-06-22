@@ -13,8 +13,7 @@
 
 .vinyl-carousel {
     width: 737px;
-    display: flex;
-    gap: 50px;
+
 }
 
 
@@ -59,9 +58,9 @@
     .vinyl-carousel{
         width: 300px;
     }
-    .vinyl-img img{
+    /* .vinyl-img img{
         width: 300px;
-    }
+    }  */
 
     .description-text {
         width: 300px !important;
@@ -74,7 +73,7 @@
     .description-btns {
         width: 300px !important;
     }
-}
+} 
 
 .vinyl-description {
 

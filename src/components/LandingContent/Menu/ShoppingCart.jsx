@@ -8,8 +8,6 @@ import { useContext, useEffect, useState } from 'react';
 import { ShoppingCartContext } from '../../../App';
 
 
-
-
 const ShoppingCartItem = (props) => {
     return (
         <li className="shopping-cart-item">

@@ -4,10 +4,11 @@ import left from './../../../sources/menu/left.png'
 import right from './../../../sources/menu/right.png'
 import FoodCard from './FoodItem';
 
-import React, { useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { indexContext } from './Menu';
 
 const FoodMenu = () => {
 
@@ -21,17 +22,35 @@ const FoodMenu = () => {
         carouselRef.current.prev(250);
     }
 
+
+    const { index } = useContext(indexContext)
+
+    useEffect(() => {
+        console.log(Number(index[1]));
+        if (Number(index[1]) % 2 !== 0) {
+            for (let i = 0; i < Number(index[1]) - 1; i++)
+                carouselRef.current.next(0)
+        } else {
+            for (let i = 0; i < Number(index[1]) - 2; i++)
+                carouselRef.current.next(0)
+            carouselRef.current.next(250)
+        }
+
+    })
+
+    //item.splice(0, 1)
     const options = {
         loop: false,
         responsive: {
             0: {
-                items: 1, // количество элементов на экране шириной 0px и выше
+                items: 1,
             },
             1250: {
-                items: 2, // количество элементов на экране шириной 600px и выше
+                items: 2,
             },
 
-        }
+        },
+
     };
 
     return (

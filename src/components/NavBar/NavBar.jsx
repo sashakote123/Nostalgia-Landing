@@ -2,7 +2,7 @@ import './navbar.css'
 import logo from './../../sources/header/logo.png';
 import burger from './../../sources/BurgerBtn.svg'
 
-import { Link, Element, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { useRef } from 'react';
 
 const NavBar = () => {

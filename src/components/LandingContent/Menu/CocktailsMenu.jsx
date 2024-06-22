@@ -4,40 +4,72 @@ import left from './../../../sources/menu/left.png'
 import right from './../../../sources/menu/right.png'
 
 
-import React, { useRef } from 'react';
+import React, { useEffect, useState, useRef, useContext } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { indexContext } from './Menu';
 
 
 
 const CocktailsMenu = () => {
 
+
+    
     const carouselRef = useRef(null)
+
+    const [items, setItems] = useState(1);
+
+    useEffect(() => {
+        const updateItems = () => {
+            const width = window.innerWidth;
+            if (width >= 1230) {
+                setItems(3);
+            } else if (width >= 1000) {
+                setItems(2);
+            } else if (width >= 0) {
+                setItems(1);
+            }
+        };
+
+        window.addEventListener('resize', updateItems);
+        updateItems();
+
+        return () => window.removeEventListener('resize', updateItems);
+    }, []);
+
+    const options = {
+        loop: false,
+        items: items,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            1000: {
+                items: 2,
+            },
+            1230: {
+                items: 3,
+            }
+        }
+    };
 
     const leftSlide = () => {
         carouselRef.current.next(250);
     }
 
-    const options = {
-        loop: false,
-        responsive: {
-            0: {
-                items: 1, // количество элементов на экране шириной 0px и выше
-            },
-            1000: {
-                items: 2, // количество элементов на экране шириной 600px и выше
-            },
-            1230: {
-                items: 3, // количество элементов на экране шириной 1000px и выше
-            },
-
-        }
-    };
-
     const rightSlide = () => {
         carouselRef.current.prev(250);
     }
+
+
+    const { index2 }= useContext(indexContext)
+
+    useEffect(() => {
+        for (let i = 0; i < Number(index2[1])-1; i++)
+            carouselRef.current.next(0)
+
+    })
 
     return (
         <>
